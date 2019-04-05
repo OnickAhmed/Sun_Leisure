@@ -14,8 +14,10 @@
 
 .hero-banner {
     background-image: url(hero\ image.png);
-    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .hero-banner-page-2 {
@@ -55,14 +57,14 @@
     left: 35%;
 }
 
-#daysItem1 {
+/* #daysItem1 {
     min-height: 179.33px;
     background:url('car\ 1.png') no-repeat center center ;
     background-size:cover;
     width:100%;
     padding-top:20%;
     padding-bottom:20%;
-}
+} */
 
 
 #daysRadio {
@@ -150,10 +152,14 @@
 
 #weatherShade {
     height: 35%;
-    width: 55%;
-    position: absolute;
-    top: 37%;
-    left: 45%
+
+width: 65%;
+
+position: absolute;
+
+top: 37%;
+
+left: 35%;
 }
 
 #btnHolidayType {
@@ -164,10 +170,14 @@
 
 #weatherupdate {
     height: 35%;
-    width: 55%;
-    position: absolute;
-    top: 38%;
-    left: 48%;
+
+width: 70%;
+
+position: absolute;
+
+top: 38%;
+
+left: 38%;
 }
 
 .wthrHead {
@@ -411,3 +421,70 @@
         margin-top: 10px;
     }
 }
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    
+    
+  }
