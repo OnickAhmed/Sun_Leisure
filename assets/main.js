@@ -45,15 +45,15 @@ jQuery(document).ready(function($) {
 
       if (ww < 480) {
         
-        $('.mnthCard').removeClass('col-md-9');
-        $('.mnthCard').addClass('col-md-12');
+        $('.cardGroup').removeClass('col-md-9');
+        $('.cardGroup').addClass('col-md-12');
         $('.mnthSec').removeClass('p-5');
         $('.mnthSec').addClass('p-4');
         $('.mnthGrp').addClass('row');
         $('.mnthItem').addClass('col-md-6');
       } else if (ww >= 480) {
-        $('.mnthCard').removeClass('col-md-12');
-        $('.mnthCard').addClass('col-md-9');
+        $('.cardGroup').removeClass('col-md-12');
+        $('.cardGroup').addClass('col-md-9');
         $('.mnthGrp').removeClass('row');
         $('.mnthItem').removeClass('col-md-6');
         $('.mnthSec').addClass('p-5');
