@@ -40,6 +40,19 @@ jQuery(document).ready(function($) {
         $('.dayDiv').removeClass('text-center');
         $('.dayUl').removeClass('list-unstyled');
       };
+
+
+
+      if (ww < 480) {
+        
+        $('.mnthMbl').addClass('col-sm-12');
+        $('.mnthMbl').removeClass('col-md-9');
+      } else if (ww >= 480) {
+        $('.mnthMbl').addClass('col-md-9');
+        $('.mnthMbl').removeClass('col-sm-12');
+      };
+
+
     };
     $(window).resize(function(){
       alterClass();
