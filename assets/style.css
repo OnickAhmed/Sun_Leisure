@@ -338,6 +338,14 @@ left: 38%;
     font-size: 16px !important;
 }
 
+.op4{
+    opacity: .4;
+}
+
+.op6{
+    opacity: .6;
+}
+
 .page2-DepartureTo .font-weight-bold{
     font-size: 24px;   
 }
@@ -383,6 +391,12 @@ left: 38%;
 
 .roundFourty{
     border-radius: 40px;
+}
+
+.pick{
+    background-color: #ffc933;
+    border-radius: 30px;
+    color: white;
 }
 
 #dropdownMenuLink{
@@ -485,6 +499,221 @@ left: 38%;
   
   @media (min-width: 320px) and (max-width: 480px) {
     
+    .fnt64{
     
+        font-size: 32px !important;
+    }
+
+    .fnt48{
+        
+        font-size: 48px !important;
+    }
+    
+    .fnt32{
+        
+        font-size: 24px !important;
+    }   
+    
+    
+    .fnt24{
+        
+        font-size: 16px !important;
+    }
+    
+    .fnt20{
+        
+        font-size: 16px !important;
+    }
+    
+    .fnt18{
+        font-size: 16px !important;
+    }
+    
+    .fnt16{
+        font-size: 12px !important;
+    }
+    
+    .fnt14{
+        font-size: 14px !important;
+    }
     
   }
+
+  /* Social Share */
+.socialShare{
+    right: 10px;
+
+float: right;
+    position: fixed; z-index: 999;
+    top: 75%;
+}
+
+.socialShare li{
+    list-style-type: none;
+    position: relative;
+    border-radius: 50px;    
+}
+
+.socialShare li i{
+    padding: 20px;
+    transition: .5s;
+    font-size: 60px;
+}
+
+.socialShare li i:hover{
+    padding: 20px 2px;
+    font-size: 60px;
+}
+
+/* End Social Share */
+
+/* Enquary */
+
+.enquary{
+    right: -4px;
+
+float: right;
+    position: fixed; z-index: 999;
+    top: 20%;
+}
+
+.enquary li{
+    list-style-type: none;
+    position: relative;
+    border-radius: 50px;    
+}
+
+.enquary li i{
+    padding: 20px;
+    transition: .5s;
+    font-size: 60px;
+}
+
+.enquary li i:hover{
+    padding: 20px 2px;
+    font-size: 60px;
+}
+
+/* End Enquary */
+
+
+
+
+  /* Amit */
+  .search-fix.fixed{
+    background:#fff;
+     position:fixed;
+     top:0;
+     background:#f2f2f2;
+     width:100%;
+     left:0;
+     padding:15px 10px;
+
+}
+.search-fix.fixed .search-box{
+    max-width:700px;
+     margin:auto;
+
+}
+
+.search-cnt{
+    max-width:670px;
+     position:absolute;
+     margin-left:-300px;
+     left:50%;
+     z-index:9999;
+     color:#fff;
+     top:20%;
+
+}
+.search-cnt h1{
+    font-weight:bold;
+     text-transform:uppercase;
+     font-size:75px;
+     text-shadow: 0px 0px 5px rgba(150, 150, 150, 0.45);
+     text-align:center;
+
+}
+.search-cnt p{
+    text-transform:uppercase;
+     font-size:29px;
+     text-shadow: 0px 0px 5px rgba(150, 150, 150, 0.45);
+     text-align:center;
+
+}
+.search-box{
+    background:#fff;
+     border-radius:5px;
+     overflow:hidden;
+
+}
+.search-box input[type='text']{
+    width:calc(100% - 80px);
+     border:none;
+     padding:5px 15px;
+     box-sizing:border-box;
+     outline:none;
+     float:left;
+     height:45px;
+     line-height:45px;
+
+}
+.search-box .search-btn{
+    background:#34a853 url(../images/search-btn.jpg) no-repeat center;
+     width:80px;
+      padding:5px 15px;
+     box-sizing:border-box;
+     height:45px;
+     line-height:45px;
+      border:none;
+     outline:none;
+
+}
+
+.scroll{
+    animation: move 1s infinite alternate;
+}
+
+@keyframes move{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Test Css */
+
+.mnthCard{
+transition: all .4s;
+}
+
+.mnthCardBody{
+    padding: 1rem !important;
+}
+
+.mnthCard:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.07);
+
+border-color: rgba(100,121,143,.24);
+
+background-color: rgba(47,209,93,.03);
+}
