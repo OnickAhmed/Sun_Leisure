@@ -60,6 +60,13 @@ jQuery(document).ready(function($) {
         $('.mnthSec').removeClass('p-4');
       };
 
+      // if(ww < 340){
+      //   $('.holidayCard').removeClass('col-sm-4');
+      // }else if (ww >= 340) {
+      //   $('.holidayCard').addClass('col-sm-4');
+
+      // };
+
 
     };
     $(window).resize(function(){
