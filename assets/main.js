@@ -41,6 +41,14 @@ jQuery(document).ready(function($) {
         $('.dayUl').removeClass('list-unstyled');
       };
 
+      // if(ww < 767 && ww > 575){
+      //   $('.tab').addClass('container-fluid px-5');
+      //   $('.tab').removeClass('container');
+      // }
+      // else{
+      //   $('.tab').addClass('container');
+      //   $('.tab').removeClass('container-fluid px-5');
+      // }
 
 
       if (ww < 480) {
@@ -51,6 +59,9 @@ jQuery(document).ready(function($) {
         $('.mnthSec').addClass('p-4');
         $('.mnthGrp').addClass('row');
         $('.mnthItem').addClass('col-md-6');
+
+        $('.planCard').addClass('col-12');
+        $('.planCard').removeClass('col-6');
       } else if (ww >= 480) {
         $('.cardGroup').removeClass('col-md-12');
         $('.cardGroup').addClass('col-md-9');
@@ -58,6 +69,9 @@ jQuery(document).ready(function($) {
         $('.mnthItem').removeClass('col-md-6');
         $('.mnthSec').addClass('p-5');
         $('.mnthSec').removeClass('p-4');
+
+        $('.planCard').addClass('col-6');
+        $('.planCard').removeClass('col-12');
       };
 
       // if(ww < 340){
