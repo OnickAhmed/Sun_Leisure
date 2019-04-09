@@ -67,17 +67,12 @@
     padding-bottom:20%;
 } */
 
+.ovrflwhdn{
+    overflow: hidden;
+}
 #daysRadio {
     margin-left: -13%;
     margin-top: -7%;
-}
-
-@media(max-width: 575px) {
-    #mnthsItem {
-        position: absolute;
-        top: 30%;
-        left: 40%;
-    }
 }
 
 .card-shadow {
@@ -511,6 +506,17 @@
     } */
 }
 
+@media (max-width: 575px) {
+    #mnthsItem {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+    .planCard {
+        width: 75%;
+    }
+    
+}
 
 
 
