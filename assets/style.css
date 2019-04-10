@@ -780,23 +780,23 @@
     /* Counter Left */
     .minMaxl {
         position: absolute;
-        top: 34%;
+        top: 36%;
         left: 11%;
         font-size: 12px;
     }.lPmin {
         margin-bottom: 4px;
     }.visitorCounter {
         position: absolute;
-        top: 30%;
+        top: 33%;
         left: 36%;
     }.plus {
-        margin-bottom: -2px;
+        margin-bottom: 0px;
     }.lplus, .lmin, .rPlus, .rMin {
         width: 65%;
     }.visitorType {
         position: absolute;
-        top: 30%;
-        left: 70%;
+        top: 32%;
+        left: 72%;
         font-size: 12px;
     }.typeName {
         margin-top: 5px;
@@ -805,12 +805,12 @@
         font-size: 16px;
     }.minMaxR {
         position: absolute;
-        top: 41%;
+        top: 43%;
         left: 66%;
         font-size: 12px;
     }.visitorCounterRight {
         position: absolute;
-        top: 28%;
+        top: 31%;
         left: 57%;
     }.visitorTypeRight {
         position: absolute;
