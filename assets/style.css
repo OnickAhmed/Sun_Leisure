@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -429,6 +433,11 @@
 @media (min-width: 1281px) {
     .holidayBtn{
         margin-left: -65px !important;
+    }.TestMnth {
+        width: 134% !important;
+        /* margin: 0px auto; */
+        margin-left: -17% !important;
+        margin-top: -70% !important;
     }
 }
 
@@ -465,8 +474,14 @@
         position: absolute;
         top: 38%;
         left: 38%;
+    }.TestMnth {
+        width: 134% !important;
+        /* margin: 0px auto; */
+        margin-left: -17% !important;
+        margin-top: -70% !important;
     }
 }
+
 
 @media (min-width: 991px) and (max-width: 1200px) {
     
@@ -534,7 +549,26 @@
         left: 44%;
     }
     /* End Counter Right */
-    /* End Counter */    
+    /* End Counter */
+    .mnthCurved {
+        height: 41% !important;
+        width: 152% !important;
+        margin-left: -26% !important;
+        margin-top: -26% !important;
+        border-radius: 0px !important;
+    }.text-center.mnthCardItem {
+        position: relative !important;
+        top: -37% !important;
+        width: 134% !important;
+        left: -16% !important;
+    }
+    
+    .TestMnth {
+        width: 158% !important;
+        /* margin: 0px auto; */
+        margin-left: -27% !important;
+        margin-top: -100% !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -553,6 +587,24 @@
         top: 34%;
         left: 5%;
         font-size: 10px;
+    }.mnthCurved {
+        width: 128% !important;
+        margin-left: -14% !important;
+        margin-top: -14% !important;
+        border-radius: 0 0 50% 50%/ 100% !important;
+    }.mnthCurved2 {
+        height: 50px;
+        background-color: #34a853;
+        width: 100%;
+        border-radius: 0 0 70% 70%/ 70%;
+    }.TestMnth {
+        width: 158% !important;
+        /* margin: 0px auto; */
+        margin-left: -27% !important;
+        margin-top: -49% !important;
+    }
+    .TestMnth .pick{
+        margin-top: -5px !important;
     }
 }
 
@@ -722,6 +774,8 @@
     .socialShare {
         right: 5px !important;
     }
+
+    
 }
 
 
@@ -733,6 +787,51 @@
     left: 50%;
     right: 50%;
     margin: auto;
+}
+
+@media (min-width: 575px) and (max-width: 990px) {
+    .mnthCurved {
+        width: 128% !important;
+        margin-left: -14% !important;
+        margin-top: -15% !important;
+        border-radius: 0 0 70% 70%/ 70% !important;
+    }
+
+    .pick{
+        margin: 15px 25px 25px 25px !important;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .mnthCurved2 {
+        height: 50px;
+        background-color: #34a853;
+        width: 100%;
+        border-radius: 0 0 70% 70%/ 70%;
+    }.TestMnth {
+        width: 158% !important;
+        /* margin: 0px auto; */
+        margin-left: -27% !important;
+        margin-top: -49% !important;
+    }
+    .TestMnth .pick{
+        margin-top: -5px !important;
+    }
+}
+
+@media (min-width: 516px) and (max-width: 574px){
+    .mnthCard {
+        transition: all .4s;
+        width: 60%;
+        margin: 0px auto;
+    }
+}
+@media (min-width: 480px) and (max-width: 515px){
+    .mnthCard {
+        transition: all .4s;
+        width: 75%;
+        margin: 0px auto;
+    }
 }
 
 
@@ -818,6 +917,7 @@
         left: 14%;
         font-size: 12px;
     }
+    
     /* End Counter Left */
     /* Counter */
     /* .wthrTemp {
@@ -864,6 +964,41 @@
     .wthrStat {
         font-size: 8px !important;
     } */
+}
+
+@media(min-width: 451px) and (max-width: 480px){
+    .mnthCard {
+        transition: all .4s !important;
+        width: 72% !important;
+        margin: 0px auto !important;
+    }.mnthCurved {
+        height: 45% !important;
+        background-color: #34a853 !important;
+        width: 132% !important;
+        margin-left: -16% !important;
+        margin-top: -18% !important;
+        border-radius: 0 0 70% 70%/ 70% !important;
+    }
+}
+@media(min-width: 401px) and (max-width: 450px){
+    .mnthCurved {
+        height: 45% !important;
+        background-color: #34a853 !important;
+        width: 124% !important;
+        margin-left: -12% !important;
+        margin-top: -12% !important;
+        border-radius: 0 0 70% 70%/ 70% !important;
+    }
+}
+@media(min-width: 320px) and (max-width: 400px){
+    .mnthCurved {
+        height: 45% !important;
+        background-color: #34a853 !important;
+        width: 130% !important;
+        margin-left: -15% !important;
+        margin-top: -20% !important;
+        border-radius: 0 0 70% 70%/ 70% !important;
+    }
 }
 
 @media(max-width: 319px){
@@ -1176,6 +1311,15 @@
     background-size: cover; */
 }
 
+.dayCard {
+    transition: all .4s;
+    background-color: transparent !important;
+    background-image: url(car\ 1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .mnthCardBody {
     padding: 1rem !important;
 }
@@ -1187,4 +1331,24 @@
     background-color: rgba(47, 209, 93, .03);
 }
 
-.mnthCard1 {}
+.mnthCurved {
+	height: 45%;
+	background-color: #34a853;
+	width: 137%;
+	margin-left: -18%;
+	margin-top: -19%;
+	border-radius: 0 0 70% 70%/ 70%;
+}.text-center.mnthCardItem {
+	position: relative;
+	top: -42%;
+}
+.mnthCard1 {
+    
+}
+.mnthCurved2 {
+	height: 40px;
+	background-color: #34a853;
+	width: 100%;
+	
+	border-radius: 0 0 70% 70%/ 70%;
+}

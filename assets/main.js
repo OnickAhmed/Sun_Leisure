@@ -13,6 +13,30 @@ jQuery(document).ready(function($) {
         $('.dayBtnP3').removeClass('my-2');
       };
 
+      if (ww < 575) {
+        $('.mnthsCardTest').addClass('mnthCardBody');
+        $('.mnthsCardTest').removeClass('mnthCardBody2');
+
+        $('.mnthsCardItmTest').addClass('text-center');
+        $('.mnthsCardItmTest').removeClass('TestMnth');
+
+        $('.testMnthHead').addClass('text-secondary h4');
+        $('.testMnthHead').removeClass('text-light h5');
+
+        $('.blank').removeClass('mnthCurved2');
+      } else if (ww >= 575) {
+        $('.mnthsCardTest').removeClass('mnthCardBody');
+        $('.mnthsCardTest').addClass('mnthCardBody2');
+
+        $('.mnthsCardItmTest').addClass('TestMnth');
+        $('.mnthsCardItmTest').removeClass('text-center');
+
+        $('.testMnthHead').addClass('text-light h5');
+        $('.testMnthHead').removeClass('text-secondary h4');
+
+        $('.blank').addClass('mnthCurved2');
+      };
+
       if(ww < 768){
         $('.dayHead').addClass('text-center');
         $('.topSection').addClass('text-center');
