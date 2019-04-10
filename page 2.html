@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -174,12 +175,50 @@
 
             <div class="btn-group align-text-bottom">
                 <button type="button" class="btn btn-success round px-3 fnt16">2 Nights</button>
-                <button type="button" class="btn btn-light px-4 round fnt16">Edit</button>
+                <button type="button" class="btn btn-light px-4 round fnt16" data-toggle="modal"
+                data-target="#DepToNightCounterMdl">Edit</button>
             </div>
 
         </div>
     </section>
     <!-- End Departure To -->
+
+    <!-- Night Counter Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="DepToNightCounterMdl" tabindex="-1">
+        <!-- fade can be removed for instant modals. -->
+        <div class="modal-dialog">
+            <!-- Could add modal-lg or modal-sm. .modal-dialog-centered is optional. -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Nights</label>
+                        <div class="btn-group dropdown">
+                            <button type="button" class="btn btn-secondary btn-sm dropdown-toggle"
+                                data-toggle="dropdown">Dropdown</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">1</a>
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">3</a>
+                                <a class="dropdown-item" href="#">4</a>
+                                <a class="dropdown-item" href="#">5</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Night Counter Modal -->
 
     <!-- Day 1 -->
     <section class="py-3">
@@ -424,8 +463,9 @@
             </div>
 
             <div class="btn-group align-text-bottom">
-                <button type="button" class="btn btn-success round px-3">2 Nights</button>
-                <button type="button" class="btn btn-light px-4 round">Edit</button>
+                <button type="button" class="btn btn-success round px-3 fnt16">2 Nights</button>
+                <button type="button" class="btn btn-light px-4 round fnt16" data-toggle="modal"
+                data-target="#DepToNightCounterMdl">Edit</button>
             </div>
         </div>
     </section>
@@ -705,8 +745,9 @@
             </div>
 
             <div class="btn-group align-text-bottom">
-                <button type="button" class="btn btn-success round px-3">2 Nights</button>
-                <button type="button" class="btn btn-light px-4 round">Edit</button>
+                <button type="button" class="btn btn-success round px-3 fnt16">2 Nights</button>
+                <button type="button" class="btn btn-light px-4 round fnt16" data-toggle="modal"
+                data-target="#DepToNightCounterMdl">Edit</button>
             </div>
         </div>
     </section>
@@ -1091,8 +1132,9 @@
             </div>
 
             <div class="btn-group align-text-bottom">
-                <button type="button" class="btn btn-success round px-3">2 Nights</button>
-                <button type="button" class="btn btn-light px-4 round">Edit</button>
+                <button type="button" class="btn btn-success round px-3 fnt16">2 Nights</button>
+                <button type="button" class="btn btn-light px-4 round fnt16" data-toggle="modal"
+                data-target="#DepToNightCounterMdl">Edit</button>
             </div>
         </div>
     </section>
