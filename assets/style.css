@@ -8,12 +8,18 @@ html{
 
 .page2 {
     background-image: url(this\ pattern\ will\ be\ repeating.png);
-    background-repeat: repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .page3 {
     background-image: url(this\ pattern\ will\ be\ repeating.png);
-    background-repeat: repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .hero-banner {
