@@ -323,8 +323,62 @@ html{
 }
 
 .fnt14 {
-    font-size: 16px !important;
+    font-size: 14px !important;
 }
+
+.fnt13 {
+    font-size: 13px !important;
+}
+
+.fnt12 {
+    font-size: 12px !important;
+}
+
+.lknUnStyled{
+text-decoration: none !important;
+}
+
+.hoverAnimateRight2{
+}
+
+.hoverAnimateRight2:hover{
+    transform: translateY(20px)  !important;
+}
+
+.hoverAnimateRight2 {
+    animation: right2 1s infinite alternate;
+}
+
+@keyframes right2 {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(25px);
+    }
+}
+
+.modal-body{
+    overflow-y: scroll;
+        height: 324px;
+        width: 100%;
+}
+
+.modal-dialog {
+	max-width: 675px;
+	margin: 1.75rem auto;
+}
+
+.placesHeader{
+    margin-left: 41px;
+}
+.placeRow{
+    background-color: #f8f8f8;
+}
+.placeColor{
+    color: #26cf96 !important;
+}
+
 
 .op4 {
     opacity: .4;
@@ -613,7 +667,11 @@ html{
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
-
+@media (min-width: 768px){
+    .modal-dialog {
+        max-height: calc(100vh - 144px) !important;
+    }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
 
 
