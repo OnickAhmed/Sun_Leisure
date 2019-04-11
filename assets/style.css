@@ -32,14 +32,18 @@ html{
 
 .hero-banner-page-2 {
     background-image: url(Page\ 2\ Banner.png);
-    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .hero-banner-page-3 {
     background-image: url(page-3\ hero\ banner.png);
-    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .img-thumbnail {
