@@ -8,18 +8,14 @@ html{
 
 .page2 {
     background-image: url(this\ pattern\ will\ be\ repeating.png);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-size: cover;
 }
 
 .page3 {
     background-image: url(this\ pattern\ will\ be\ repeating.png);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-size: cover;
 }
 
 .hero-banner {
@@ -851,23 +847,41 @@ text-decoration: none !important;
     .evening.roundFourty.py-3.mt-4.text-center {
         padding: 0 !important;
     }
-    .evngRow ul, .meal{
+    .evngRow ul, .mblpy0my0{
         padding-top: 0 !important;
         padding-bottom: 0 !important;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
-    .mealIcon{
+    .mblpy0{
         padding-top: 1rem !important;
         padding-bottom: 1rem !important;
     }
-    .mealHeader{
+    .mblpt0{
         padding-top: 0 !important;
     }
 
-    .mealBottom{
+    .mbpb0{
         padding-bottom: 1rem !important;
         margin-bottom: 0 !important;
+    }
+
+    .mblmy0{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .mblpy1my0{
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .mblmt0{
+        margin-top: 0 !important;
+    }
+
+    .addarrival{
+        display: none !important;
     }
 }
 
