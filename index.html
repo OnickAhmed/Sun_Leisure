@@ -636,14 +636,14 @@
                 <div class="col text-center mb-3">
                     <div>
                         <h3 class="font-weight-bold">4. Select destinations to visit</h3>
-                        <h4>(Select city if Arrival)</h4>
+                        <h4>(Select city of Arrival)</h4>
                         <p class="lead text-secondary">(Select this to get <span class="text-warning">4 USD bonus</span>
                             Point)
                         </p>
                     </div>
                     <div class="mx-auto col-md-6 mt-3">
                         <div class="d-flex justify-content-center h-100">
-                            <div class="searchbar">
+                            <div class="searchbar" data-toggle="modal" data-target="#city">
                                 <input class="search_input" type="text" name=""
                                     placeholder="Select your destination...">
                                 <a href="" class="search_icon"><i class="fas fa-search"></i></a>
@@ -652,7 +652,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row pt-3">
+            <div class="row pt-3 addarrival">
                 <div class="col-sm-6 col-md-4 col-6 mx-auto mb-4 planCard">
                     <div class="card border-0 card-shadow">
                         <img src="assets/destination 1.png" class="card-img-top">
@@ -682,8 +682,8 @@
                             </div>
                         </div>
                         <div id="btnChoosePlan">
-                            <a href="#holiDayType" class="btn btn-success btn-small px-5 mx-auto rounded-2 "
-                                style="border-radius: 40px;">Add</a>
+                            <a class="btn btn-success btn-small px-5 mx-auto rounded-2 " style="border-radius: 40px;"
+                                data-toggle="modal" data-target="#cityOfArrival">Add</a>
                         </div>
                     </div>
                 </div>
@@ -716,8 +716,10 @@
                             </div>
                         </div>
                         <div id="btnChoosePlan">
-                            <a href="#" class="btn btn-success btn-small px-5 mx-auto rounded-2"
-                                style="border-radius: 40px;">Add</a>
+                            <!-- <a class="btn btn-success btn-small px-5 mx-auto rounded-2" style="border-radius: 40px;"
+                                data-toggle="modal" data-target="#cityOfArrival">Add</a> -->
+                                <button type="button" class="btn btn-light px-5 mx-auto round fnt16"> <span
+                                    class="text-success">Add</span></button>
                         </div>
                     </div>
                 </div>
@@ -750,8 +752,10 @@
                             </div>
                         </div>
                         <div id="btnChoosePlan">
-                            <a href="#" class="btn btn-success btn-small px-5 mx-auto rounded-2"
-                                style="border-radius: 40px;">Add</a>
+                            <!-- <a class="btn btn-success btn-small px-5 mx-auto rounded-2" style="border-radius: 40px;"
+                                data-toggle="modal" data-target="#cityOfArrival">Add</a> -->
+                                <button type="button" class="btn btn-light px-5 mx-auto round fnt16"> <span
+                                    class="text-success">Add</span></button>
                         </div>
                     </div>
                 </div>
@@ -785,8 +789,10 @@
                             </div>
                         </div>
                         <div id="btnChoosePlan">
-                            <a href="#" class="btn btn-success btn-small px-5 mx-auto rounded-2 "
-                                style="border-radius: 40px;">Add</a>
+                            <!-- <a class="btn btn-success btn-small px-5 mx-auto rounded-2" style="border-radius: 40px;"
+                                data-toggle="modal" data-target="#cityOfArrival">Add</a> -->
+                                <button type="button" class="btn btn-light px-5 mx-auto round fnt16"> <span
+                                    class="text-success">Add</span></button>
                         </div>
                     </div>
                 </div>
@@ -819,8 +825,10 @@
                             </div>
                         </div>
                         <div id="btnChoosePlan">
-                            <a href="#" class="btn btn-success btn-small px-5 mx-auto rounded-2"
-                                style="border-radius: 40px;">Add</a>
+                            <!-- <a class="btn btn-success btn-small px-5 mx-auto rounded-2" style="border-radius: 40px;"
+                                data-toggle="modal" data-target="#cityOfArrival">Add</a> -->
+                                <button type="button" class="btn btn-light px-5 mx-auto round fnt16"> <span
+                                    class="text-success">Add</span></button>
                         </div>
                     </div>
                 </div>
@@ -853,108 +861,295 @@
                             </div>
                         </div>
                         <div id="btnChoosePlan">
-                            <a href="#" class="btn btn-success btn-small px-5 mx-auto rounded-2"
-                                style="border-radius: 40px;">Add</a>
+                            <button type="button" class="btn btn-light px-5 mx-auto round fnt16"> <span
+                                    class="text-success">Add</span></button>
+                            <a></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- <div class="row py-3">
-                <div class="col-sm-4 mx-auto mb-4 planCard">
-                    <div class="card border-0 card-shadow">
-                        <img src="assets/destination 4.png" class="card-img-top">
-                        <img src="assets/weather shade.png" id="weatherShade">
-                        <div class="wthrHeader text-center text-uppercase text-dark font-weight-bold">
-                            <p class="head mb-0">chiang mai</p>
-                            <p class="subHead">Thailand</p>
-                        </div>
-                        <div id="weatherupdate">
-                            <div class="row text-light">
-                                <div class="col-md-6 pr-0 wthrLeft">
-                                    <p class="wthrHead text-uppercase font-weight-bold mb-0">chiang mai</p>
-                                    <p id="wthrDay" class="mb-0">Monday</p>
-                                    <p id="wthrDay" class="mb-0">28/03/2019</p>
-                                    <p id="wthrDay" class="mb-0">Wind: 4 km/h w</p>
-                                    <p id="wthrDay" class="mb-0">Humidity: 40%</p>
-                                    <p id="wthrDay" class="mb-0 wthrTemp font-weight-bold"><i class="fas fa-long-arrow-alt-up"></i>22&deg<i class="fas fa-long-arrow-alt-down"></i>30&deg</p>
-                                </div>
-                                <div class="col-md-6 pl-0 wthrRight text-center">
-                                    <p class="text-center mb-0"><i class="fas fa-cloud-sun-rain text-light fa-3x wthrIcon"></i></p>
-                                    <p class="h2 text-center font-weight-bold mb-0">25&deg</p>
-                                    <p class="text-uppercase wthrStat">Partly cloudy</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="btnChoosePlan">
-                            <a href="#" class="btn btn-success btn-small px-5 mx-auto rounded-2" style="border-radius: 40px;">Add</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mx-auto mb-4 planCard">
-                    <div class="card border-0 card-shadow">
-                        <img src="assets/destination 5.png" class="card-img-top">
-                        <img src="assets/weather shade.png" id="weatherShade">
-                        <div class="wthrHeader text-center text-uppercase text-dark font-weight-bold">
-                            <p class="head mb-0">Chiang rai</p>
-                            <p class="subHead">Thailand</p>
-                        </div>
-                        <div id="weatherupdate">
-                            <div class="row text-light">
-                                <div class="col-md-6 pr-0 wthrLeft">
-                                    <p class="wthrHead text-uppercase font-weight-bold mb-0">Chiang rai</p>
-                                    <p id="wthrDay" class="mb-0">Monday</p>
-                                    <p id="wthrDay" class="mb-0">28/03/2019</p>
-                                    <p id="wthrDay" class="mb-0">Wind: 4 km/h w</p>
-                                    <p id="wthrDay" class="mb-0">Humidity: 40%</p>
-                                    <p id="wthrDay" class="mb-0 wthrTemp font-weight-bold"><i class="fas fa-long-arrow-alt-up"></i>22&deg<i class="fas fa-long-arrow-alt-down"></i>30&deg</p>
-                                </div>
-                                <div class="col-md-6 pl-0 wthrRight text-center">
-                                    <p class="text-center mb-0"><i class="fas fa-cloud-sun-rain text-light fa-3x wthrIcon"></i></p>
-                                    <p class="h2 text-center font-weight-bold mb-0">25&deg</p>
-                                    <p class="text-uppercase wthrStat">Partly cloudy</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="btnChoosePlan">
-                            <a href="#" class="btn btn-success btn-small px-5 mx-auto rounded-2" style="border-radius: 40px;">Add</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 mx-auto mb-4 planCard">
-                    <div class="card border-0 card-shadow">
-                        <img src="assets/destination 6.png" class="card-img-top">
-                        <img src="assets/weather shade.png" id="weatherShade">
-                        <div class="wthrHeader text-center text-uppercase text-dark font-weight-bold">
-                            <p class="head mb-0">koh samui</p>
-                            <p class="subHead">Thailand</p>
-                        </div>
-                        <div id="weatherupdate">
-                            <div class="row text-light">
-                                <div class="col-md-6 pr-0 wthrLeft">
-                                    <p class="wthrHead text-uppercase font-weight-bold mb-0">koh samui</p>
-                                    <p id="wthrDay" class="mb-0">Monday</p>
-                                    <p id="wthrDay" class="mb-0">28/03/2019</p>
-                                    <p id="wthrDay" class="mb-0">Wind: 4 km/h w</p>
-                                    <p id="wthrDay" class="mb-0">Humidity: 40%</p>
-                                    <p id="wthrDay" class="mb-0 wthrTemp font-weight-bold"><i class="fas fa-long-arrow-alt-up"></i>22&deg<i class="fas fa-long-arrow-alt-down"></i>30&deg</p>
-                                </div>
-                                <div class="col-md-6 pl-0 wthrRight text-center">
-                                    <p class="text-center mb-0"><i class="fas fa-cloud-sun-rain text-light fa-3x wthrIcon"></i></p>
-                                    <p class="h2 text-center font-weight-bold mb-0">25&deg</p>
-                                    <p class="text-uppercase wthrStat">Partly cloudy</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="btnChoosePlan">
-                            <a href="#" class="btn btn-success btn-small px-5 mx-auto rounded-2" style="border-radius: 40px;">Add</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+
         </div>
     </section>
 
+
+
+    <!-- Modal -->
+    <div class="modal fade cityModal" id="city" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Please Select Your City of Arrival</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="height: 330px;">
+                    <p>Trending Destinations</p>
+                    <ul class="list-unstyled">
+                        <li id="addCityLi">
+                            <div class="row py-2 my-auto">
+                                <div class="col-sm-1 col-1 placeColor my-auto text-center pr-0"><i
+                                        class="fas fa-plane-arrival fnt18"></i></div>
+                                <div class="col-sm-9 col-9 ">
+                                    <span class="pull-left srch-lft my-auto text-capitalize"><b>Bangkok, Thailand</b>
+                                        <p class="my-auto fnt14"><span class="fnt20">32&deg; </span><span class="fnt16">
+                                                22&deg;</span> - <span class="text-success">Sunny</span></p>
+                                        <p class="my-auto fnt12">Sunday, Apr-13, 2019</p>
+                                </div>
+                                <div class="col-sm-2 col-2 text-center my-auto">
+                                    <p class="my-auto"><i class="far fa-circle"></i></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="addCityLi">
+                            <div class="row py-2 my-auto">
+                                <div class="col-sm-1 col-1 placeColor my-auto text-center pr-0"><i
+                                        class="fas fa-plane-arrival fnt18"></i></div>
+                                <div class="col-sm-9 col-9 ">
+                                    <span class="pull-left srch-lft my-auto text-capitalize"><b>Phuket, Thailand</b>
+                                        <p class="my-auto fnt14"><span class="fnt20">36&deg; </span><span class="fnt16">
+                                                24&deg;</span> - <span class="text-warning">Mostly Sunny</span></p>
+                                        <p class="my-auto fnt12">Sunday, Apr-13, 2019</p>
+                                </div>
+                                <div class="col-sm-2 col-2 text-center my-auto">
+                                    <p class="my-auto"><i class="far fa-circle"></i></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="addCityLi">
+                            <div class="row py-2 my-auto">
+                                <div class="col-sm-1 col-1 placeColor my-auto text-center pr-0"><i
+                                        class="fas fa-plane-arrival fnt18"></i></div>
+                                <div class="col-sm-9 col-9 ">
+                                    <span class="pull-left srch-lft my-auto text-capitalize"><b>Pattaya, Thailand</b>
+                                        <p class="my-auto fnt14"><span class="fnt20">36&deg; </span><span class="fnt16">
+                                                24&deg;</span> - <span class="text-muted">Cloudy</span></p>
+                                        <p class="my-auto fnt12">Sunday, Apr-13, 2019</p>
+                                </div>
+                                <div class="col-sm-2 col-2 text-center my-auto">
+                                    <p class="my-auto"><i class="far fa-circle"></i></p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li id="addCityLi">
+                                <div class="row py-2 my-auto">
+                                    <div class="col-sm-1 col-1 placeColor my-auto text-center pr-0"><i
+                                            class="fas fa-plane-arrival fnt18"></i></div>
+                                    <div class="col-sm-9 col-9 ">
+                                        <span class="pull-left srch-lft my-auto text-capitalize"><b>Pattaya, Thailand</b>
+                                            <p class="my-auto fnt14"><span class="fnt20">36&deg; </span><span class="fnt16">
+                                                    24&deg;</span> - <span class="">Mostly Cloudy</span></p>
+                                            <p class="my-auto fnt12">Sunday, Apr-13, 2019</p>
+                                    </div>
+                                    <div class="col-sm-2 col-2 text-center my-auto">
+                                        <p class="my-auto"><i class="far fa-circle"></i></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="addCityLi">
+                                    <div class="row py-2 my-auto">
+                                        <div class="col-sm-1 col-1 placeColor my-auto text-center pr-0"><i
+                                                class="fas fa-plane-arrival fnt18"></i></div>
+                                        <div class="col-sm-9 col-9 ">
+                                            <span class="pull-left srch-lft my-auto text-capitalize"><b>Pattaya, Thailand</b>
+                                                <p class="my-auto fnt14"><span class="fnt20">36&deg; </span><span class="fnt16">
+                                                        24&deg;</span> - <span class="text-danger">Thunderstorm</span></p>
+                                                <p class="my-auto fnt12">Sunday, Apr-13, 2019</p>
+                                        </div>
+                                        <div class="col-sm-2 col-2 text-center my-auto">
+                                            <p class="my-auto"><i class="far fa-circle"></i></p>
+                                        </div>
+                                    </div>
+                                </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="modal fade" id="DepToNightCounterMdl" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <h5 class="modal-title text-capitalize" id="exampleModalScrollableTitle">Edit Trip</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row fnt12">
+                        <span class="pull-left col-sm-6 col-6 fnt12">Route</span>
+                        <span class="pull-left col-sm-2 col-2 fnt12 text-center">#Nights</span>
+                        <span class="pull-left col-sm-2 col-2 fnt12 text-center">Replace</span>
+                        <span class="pull-left col-sm-2 col-2 fnt12 text-center">Remove</span>
+                    </div>
+                    <section class="pt-1">
+                        <a class="ml-2 fnt14 lknUnStyled placeColor crsrDefault" data-toggle="modal"
+                            data-target="#city"><i class="fas fa-plus-circle"></i> <span
+                                class="ml-2 hoverAnimateRight2">Add New City</span></a>
+                        <div class="row my-2 py-2 placeRow">
+                            <div class="col-sm-6 col-6">
+                                <span class="placesHeader my-auto">Ubud</span>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class=" my-auto">
+                                    <div class="row">
+                                        <div class="mx-auto">
+                                            <i class="fas fa-minus fnt12 placeColor"></i> <span class="mx-2">3</span><i
+                                                class="fas fa-plus fnt12 placeColor"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-exchange-alt fnt16 placeColor"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-trash-alt text-danger fnt16"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt-1">
+                            <a class="ml-2 fnt14 lknUnStyled placeColor crsrDefault" data-toggle="modal"
+                            data-target="#city"><i class="fas fa-plus-circle"></i> <span
+                                class="ml-2 hoverAnimateRight2">Add New City</span></a>
+                        <div class="row my-2 py-2 placeRow">
+                            <div class="col-sm-6 col-6">
+                                <span class="placesHeader my-auto">Tulamben</span>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class=" my-auto">
+                                    <div class="row">
+                                        <div class="mx-auto">
+                                            <i class="fas fa-minus fnt12 placeColor"></i> <span class="mx-2">3</span><i
+                                                class="fas fa-plus fnt12 placeColor"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-exchange-alt fnt16 placeColor"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-trash-alt text-danger fnt16"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt-1">
+                            <a class="ml-2 fnt14 lknUnStyled placeColor crsrDefault" data-toggle="modal"
+                            data-target="#city"><i class="fas fa-plus-circle"></i> <span
+                                class="ml-2 hoverAnimateRight2">Add New City</span></a>
+                        <div class="row my-2 py-2 placeRow">
+                            <div class="col-sm-6 col-6">
+                                <span class="placesHeader my-auto">Sanor</span>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class=" my-auto">
+                                    <div class="row">
+                                        <div class="mx-auto">
+                                            <i class="fas fa-minus fnt12 placeColor"></i> <span class="mx-2">3</span><i
+                                                class="fas fa-plus fnt12 placeColor"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-exchange-alt fnt16 placeColor"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-trash-alt text-danger fnt16"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt-1">
+                            <a class="ml-2 fnt14 lknUnStyled placeColor crsrDefault" data-toggle="modal"
+                            data-target="#city"><i class="fas fa-plus-circle"></i> <span
+                                class="ml-2 hoverAnimateRight2">Add New City</span></a>
+                        <div class="row my-2 py-2 placeRow">
+                            <div class="col-sm-6 col-6">
+                                <span class="placesHeader my-auto">Nusa Dua</span>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class=" my-auto">
+                                    <div class="row">
+                                        <div class="mx-auto">
+                                            <i class="fas fa-minus fnt12 placeColor"></i> <span class="mx-2">3</span><i
+                                                class="fas fa-plus fnt12 placeColor"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-exchange-alt fnt16 placeColor"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-trash-alt text-danger fnt16"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt-1">
+                            <a class="ml-2 fnt14 lknUnStyled placeColor crsrDefault" data-toggle="modal"
+                            data-target="#city"><i class="fas fa-plus-circle"></i> <span
+                                class="ml-2 hoverAnimateRight2">Add New City</span></a>
+                        <div class="row my-2 py-2 placeRow">
+                            <div class="col-sm-6 col-6">
+                                <span class="placesHeader my-auto">Kuta</span>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class=" my-auto">
+                                    <div class="row">
+                                        <div class="mx-auto">
+                                            <i class="fas fa-minus fnt12 placeColor"></i> <span class="mx-2">3</span><i
+                                                class="fas fa-plus fnt12 placeColor"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-exchange-alt fnt16 placeColor"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-2">
+                                <div class="text-center my-auto">
+                                    <i class="fas fa-trash-alt text-danger fnt16"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer p-2">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
     <section id="holiDayType">
         <div class="container py-5 ovrflwhdn">
