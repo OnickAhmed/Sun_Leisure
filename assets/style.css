@@ -144,14 +144,7 @@ html{
     color: white;
 }
 
-@media(max-width: 371px) {
-    .searchbar:hover>.search_input {
-        padding: 0 10px;
-        width: 75%;
-        caret-color: red;
-        transition: width 0.5s linear;
-    }
-}
+
 
 #btnChoosePlan {
     position: absolute;
@@ -367,6 +360,14 @@ text-decoration: none !important;
         transform: translateY(25px);
     }
 }
+.crsrDefault {cursor: default;}
+#addCityLi:hover {
+	opacity: 1;
+    background-color: rgba(34,60,68,.05);
+}
+#addCityLi:hover i:nth-child(1) {
+	color: #28a745 !important;
+}
 
 .modal-body{
     overflow-y: scroll;
@@ -482,18 +483,25 @@ text-decoration: none !important;
     }
 }
 
+@media(max-width: 371px) {
+    .searchbar:hover>.search_input {
+        padding: 0 10px;
+        width: 75%;
+        caret-color: red;
+        transition: width 0.5s linear;
+    }
+}
+
 @media screen and (max-width: 466px) {
     #second-buttonftr {
         margin-top: 10px;
     }
 }
 
-
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
-
 @media (min-width: 1281px) {
     .holidayBtn{
         margin-left: -65px !important;
@@ -504,7 +512,6 @@ text-decoration: none !important;
         margin-top: -70% !important;
     }
 }
-
 
 /* 
     ##Device = Laptops, Desktops
@@ -545,7 +552,6 @@ text-decoration: none !important;
         margin-top: -70% !important;
     }
 }
-
 
 @media (min-width: 991px) and (max-width: 1200px) {
     
@@ -842,8 +848,27 @@ text-decoration: none !important;
     .socialShare {
         right: 5px !important;
     }
+    .evening.roundFourty.py-3.mt-4.text-center {
+        padding: 0 !important;
+    }
+    .evngRow ul, .meal{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .mealIcon{
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    .mealHeader{
+        padding-top: 0 !important;
+    }
 
-    
+    .mealBottom{
+        padding-bottom: 1rem !important;
+        margin-bottom: 0 !important;
+    }
 }
 
 
