@@ -857,13 +857,40 @@ text-decoration: none !important;
         padding-top: 1rem !important;
         padding-bottom: 1rem !important;
     }
+    .mblpb0{
+        padding-bottom: 0 !important;
+    }
     .mblpt0{
         padding-top: 0 !important;
+    }
+    .mblpr0{
+        padding-right: 0 !important;
     }
 
     .mbpb0{
         padding-bottom: 1rem !important;
         margin-bottom: 0 !important;
+    }
+
+    .mblpbhalf{
+        padding-bottom: .5rem !important;
+    }
+    .mblmb0{
+        margin-bottom: 0 !important;
+    }
+
+    .mblpyhalf{
+        padding-top: .5rem !important;
+        padding-bottom: .5rem !important;
+    }
+
+    .mblpt2{
+        padding-top: 2rem !important;
+    }
+
+    .mblpx2{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
 
     .mblmy0{
@@ -880,15 +907,45 @@ text-decoration: none !important;
         margin-top: 0 !important;
     }
 
+    .mblbnrbtn{
+        padding-top: .5rem !important;
+        padding-bottom: .5rem !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .mblfnt12{
+        font-size: 12px !important;
+    }
     .addarrival{
         display: none !important;
     }
     .arrivalCityUl {
         width: 100%;
-        height: 265px !important;
+        height: 225px !important;
         overflow-y: scroll !important;
         overflow-x: hidden !important;
     }
+
+    .arrivalCityUl li{
+        cursor: pointer;
+    }
+
+    .arrivalCityUl li a:hover,.arrivalCityUl li.active a{
+        color: #28a745;
+    }
+
+    .mblpt1pb1half{
+        padding-top: 1rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+
+    /* Page 3 */
+    .mblbnr{
+        height: 55vh !important;
+    }
+    /* End Page 3 */
 }
 
 @media (min-width: 575px){
