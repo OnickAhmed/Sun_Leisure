@@ -78,7 +78,7 @@ html{
 } */
 
 .ovrflwhdn{
-    overflow: hidden;
+    overflow: hidden !important;
 }
 #daysRadio {
     margin-left: -13%;
@@ -950,16 +950,98 @@ text-decoration: none !important;
     .mblbnr{
         height: 55vh !important;
     }
+
+    #content-desktop {display: none !important;}
+    #content-mobile {display: block !important;}
+
+    .px5px{
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+    .mxw-77{
+        max-width: 77.333% !important;
+    }
+    .mxw-13{
+        max-width: 13.667% !important;
+    }.mxw-4{
+        max-width: 4.333% !important;
+    }
+    .mblbrkfst{
+    }
     /* End Page 3 */
 }
+
+#content-desktop {display: block;}
+    #content-mobile {display: none;}
 
 @media (min-width: 575px){
     .showAddarrival{
         display: none !important;
     }
+    
 }
 
 
+/* Page 3 Mobile */
+
+.page3{
+    background-image: none !important;
+    background-color: white;
+}
+.tabs-border-btm li.active a, .tabs-border-btm li.active a:focus, .tabs-border-btm li.active a:hover {
+	color: #4a4f6d;
+}.tabs-border-btm li.active a {
+	border-bottom: 4px solid #4a4f6d;
+}.tabs-border-btm li a {
+	background-color: rgba(0,0,0,0);
+	border-radius: 0;
+}.nav > li > a {
+	padding: 10px 15px;
+}a, a:focus, a:hover {
+	text-decoration: none;
+	outline: 0 none;
+}a, button {
+	transition: all .2s;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-ms-transition: all .2s;
+	-o-transition: all .2s;
+}.nav {
+	list-style: none;
+}
+
+.liUnstyled{
+    list-style: none;
+}
+
+.circle{
+    border-radius: 50%;
+    background-color: #26cf96;
+}.circle3{
+    padding: 10px;
+  font-size: 16px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 0px;
+  border-radius: 50%;
+  background-color: #26cf96;
+}
+.icon2{
+    position: absolute;
+    width: inherit;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.border-bottom-4{
+    border-bottom: 4px solid #4a4f6d !important;
+}
+
+
+/* End Page 3 Mobile */
 
 
 #btnHolidayType {
