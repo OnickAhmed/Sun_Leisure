@@ -222,9 +222,33 @@ $(".dptPlus4").click(function () {
     }
 });
 
-$(".confirm").click(function () {
+$(".confirmnn").click(function () {
+    $(".usd2").hide();
+    $(".usd4").hide();
+    $(".usd4").hide();
     $("#gg").addClass("gif2");
-    setTimeout(function () { $("#gg").removeClass("gif2"); }, 2000);
+    setTimeout(function () { $("#gg").removeClass("gif2"); }, 4000);
+});
+$(".confirmUsd1").click(function () {
+    $(".usd1").show();
+    $(".usd2").hide();
+    $(".usd4").hide();
+    $("#gg").addClass("gif2");
+    setTimeout(function () { $("#gg").removeClass("gif2"); }, 4000);
+});
+$(".confirmUsd2").click(function () {
+    $(".usd1").hide();
+    $(".usd2").show();
+    $(".usd4").hide();
+    $("#gg").addClass("gif2");
+    setTimeout(function () { $("#gg").removeClass("gif2"); }, 4000);
+});
+$(".confirmUsd4").click(function () {
+    $(".usd1").hide();
+    $(".usd2").hide();
+    $(".usd4").show();
+    $("#gg").addClass("gif2");
+    setTimeout(function () { $("#gg").removeClass("gif2"); }, 4000);
 });
 
 var countDownDate = new Date(new Date().getTime() + (50*60*1000));
